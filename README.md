@@ -54,6 +54,10 @@ This github repository holds a report/summary of my experiences participating in
   > ./a.out
   > gtkwave tb_good_mux.vcd
   
+  The following images contain the execution of all the above commands and the waveforms in the gtkwave viewer.
+  
+  IMG Capture31
+  
   IMG Capture32
   
   ### Synthesis of 2:1 Mux using Yosys
