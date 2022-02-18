@@ -35,7 +35,7 @@ This github repository holds a report/summary of my experiences participating in
   Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
   > git clone https://www.github.com/(insert_file_name)
   
-  The repository "vsdflow" requires relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files, model files and .lib file for understanding the design flow.
+  The repository "vsdflow" contains relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files, model files and .lib file for understanding the design flow.
   
   IMG Capture28
   
