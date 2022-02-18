@@ -39,9 +39,11 @@ This github repository holds a report/summary of my experiences participating in
   
   IMG Capture28
   
-  The second part of this day involves simulation of 2:1 Mux. The following images contain verilog behavioral file and testbench of the 2:1 Mux.
+  The second part of this day involves simulation of 2:1 Mux. The following images contain verilog behavioral file and testbench of the 2:1 Mux. They can be read in linux using the following command:
+  > gvim tb_good_mux -o good_mux
   
   IMG Capture29
+  
   IMG Capture30
   
   ### Simulation of 2:1 Mux using iverilog
