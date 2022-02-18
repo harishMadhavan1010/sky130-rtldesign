@@ -35,11 +35,27 @@ This github repository holds a report/summary of my experiences participating in
   Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
   > git clone https://www.github.com/(insert_file_name)
   
-  The repository "vsdflow" requires relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files and .lib file for understanding the design flow.
+  The repository "vsdflow" requires relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files, model files and .lib file for understanding the design flow.
+  
+  IMG Capture28
+  
+  The second part of this day involves simulation of 2:1 Mux. The following images contain verilog behavioral file and testbench of the 2:1 Mux.
+  
+  IMG Capture29
+  IMG Capture30
   
   ### Simulation of 2:1 Mux using iverilog
+  Iverilog is a simulator. It takes in a behavioural model of a design and corresponding testbench as its arguments. The testbench generates necessary stimulus in the design (which is basically changes in primary inputs over time) and paves way for observing primary output changes. Iverilog then makes sense of this and generates an executable file (.out or .vvp file) which upon execution, dumps a .vcd file (Value Change Dump). This can later be read by gtkwave to visually observe the stimulus as waveforms.
+  
+  This sounds complicated but actually doing this involves only a few commands in linux:
+  > iverilog good_mux.v tb_good_mux.v
+  > ./a.out
+  > gtkwave tb_good_mux.vcd
+  
+  IMG Capture32
   
   ### Synthesis of 2:1 Mux using Yosys
+  Yosys is a popular opensource synthesis tool.
 
 ## Day 2
   ### Understanding .lib file
