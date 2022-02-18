@@ -24,12 +24,23 @@ This github repository holds a report/summary of my experiences participating in
 * References
 
 ## Day 1
+  ### Introduction to Iverilog
+  
+  ### Using iverilog to generate VCDs
+  
+  ### Introduction to Yosys
 
 ## Day 2
+  ### Understanding .lib file
+  
+  ### Hierarchical and Flat synthesis
+  
+  ### Optimization using Flip Flops
 
-### Day 3
+## Day 3
 
 ## Day 4
 
 ## Day 5
 
+## References
