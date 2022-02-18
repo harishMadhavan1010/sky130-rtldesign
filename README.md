@@ -40,7 +40,7 @@ This github repository holds a report/summary of my experiences participating in
   IMG Capture28
   
   The second part of this day involves simulation of 2:1 Mux. The following images contain verilog behavioral file and testbench of the 2:1 Mux which can be read in linux by running the following command:
-  > gvim tb_good_mux -o good_mux
+  > ```gvim tb_good_mux -o good_mux```
   
   IMG Capture29
   
@@ -51,7 +51,9 @@ This github repository holds a report/summary of my experiences participating in
   
   This sounds complicated but actually doing this involves only a few commands in linux:
   > ```iverilog good_mux.v tb_good_mux.v```
+
   > ```./a.out```
+
   > ```gtkwave tb_good_mux.vcd```
   
   The following images contain the execution of all the above commands and the waveforms in the gtkwave viewer.
