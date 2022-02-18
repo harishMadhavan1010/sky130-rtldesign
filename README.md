@@ -25,7 +25,7 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 1
   ### Preliminary Tasks
-    Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned and placed in the desktop<sup>a</sup>.
+    <p>Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned and placed in the desktop<sup>a</sup>.</p>
     
   ### Simulation of 2:1 Mux using iverilog
   
