@@ -26,11 +26,12 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 1
   ### Preliminary Tasks
-  This day starts out with learning some descriptions like:
+  I'll list the report by starting off with one-line descriptions of a few tools:
   
     1. Design: The set of verilog codes which has necessary functionality to meet with the given specs.
     2. Simulator: Tool for simulating a design to check if RTL Design matches with the given specs.
     3. Test Bench: Setup to apply stimulus (test_vectors) to the design to check its functionality.
+    4. Synthesizer: Tool which converts RTL to gate-level netlist.
     
   Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
   > ```git clone https://www.github.com/(insert_file_name)```
@@ -65,7 +66,7 @@ This github repository holds a report/summary of my experiences participating in
   IMG Capture32
   
   ### Synthesis of 2:1 Mux using Yosys
-  Yosys is a popular opensource synthesis tool.
+  Yosys is a popular opensource synthesis tool. Yosys specifically requires the RTL file and .lib file.
 
 ## Day 2
   ### Understanding .lib file
