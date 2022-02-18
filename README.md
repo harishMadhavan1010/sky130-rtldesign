@@ -27,6 +27,7 @@ This github repository holds a report/summary of my experiences participating in
 ## Day 1
   ### Preliminary Tasks
   This day starts out with learning some descriptions like:
+  
     1. Design: The set of verilog codes which has necessary functionality to meet with the given specifications.
     2. Simulator: Tool used for simulating a design so that we can check if RTL Design matches with the given specifications.
     3. Test Bench: Setup to apply stimulus (test_vectors) to the design to check its functionality.
