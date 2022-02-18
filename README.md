@@ -26,7 +26,12 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 1
   ### Preliminary Tasks
-  Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned and placed in the desktop<sup>a</sup>.
+  This day starts out with learning some descriptions like:
+    1. Design: The set of verilog codes which has necessary functionality to meet with the given specifications.
+    2. Simulator: Tool used for simulating a design so that we can check if RTL Design matches with the given specifications.
+    3. Test Bench: Setup to apply stimulus (test_vectors) to the design to check its functionality.
+    
+  Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using > git clone https://www.github.com/(insert_file_name).
     
   ### Simulation of 2:1 Mux using iverilog
   
