@@ -45,4 +45,7 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 5
 
+## Credits
+[a] Kunalg
+
 ## References
