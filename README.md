@@ -3,23 +3,23 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Table of Contents
 * Day 1
-  1. Introduction to Iverilog
-  2. Using iverilog to generate VCDs
-  3. Introduction to Yosys
+  - Introduction to Iverilog
+  - Using iverilog to generate VCDs
+  - Introduction to Yosys
 
 * Day 2
-  1. Understanding .lib file
-  2. Hierarchical and Flat synthesis
-  3. Optimization using Flip Flops
+  - Understanding .lib file
+  - Hierarchical and Flat synthesis
+  - Optimization using Flip Flops
 
 * Day 3
-  1. TBD
+  - TBD
 
 * Day 4
-  1. TBD
+  - TBD
 
 * Day 5
-  1. TBD
+  - TBD
 
 * References
 
