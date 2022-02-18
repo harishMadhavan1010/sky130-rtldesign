@@ -7,7 +7,7 @@ This github repository holds a report/summary of my experiences participating in
   - Simulation of 2:1 Mux using iverilog
   - Synthesis of 2:1 Mux using Yosys
 
-* Day 2: 
+* Day 2: .libs, hierarchical vs flat synthesis & flop coding
   - Understanding .lib file
   - Hierarchical and Flat synthesis
   - Optimization using Flip Flops
