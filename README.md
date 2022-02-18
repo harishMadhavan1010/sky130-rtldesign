@@ -50,11 +50,9 @@ This github repository holds a report/summary of my experiences participating in
   Iverilog is a simulator. It takes in a behavioural model of a design and corresponding testbench as its arguments. The testbench generates necessary stimulus in the design (which is basically changes in primary inputs over time) and paves way for observing primary output changes. Iverilog then makes sense of this and generates an executable file (.out or .vvp file) which upon execution, dumps a .vcd file (Value Change Dump). This can later be read by gtkwave to visually observe the stimulus as waveforms.
   
   This sounds complicated but actually doing this involves only a few commands in linux:
-  > ```iverilog good_mux.v tb_good_mux.v```
-
-  > ```./a.out```
-
-  > ```gtkwave tb_good_mux.vcd```
+  > ```iverilog good_mux.v tb_good_mux.v
+       ./a.out
+       gtkwave tb_good_mux.vcd```
   
   The following images contain the execution of all the above commands and the waveforms in the gtkwave viewer.
   
