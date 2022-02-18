@@ -51,8 +51,8 @@ This github repository holds a report/summary of my experiences participating in
   
   This sounds complicated but actually doing this involves only a few commands in linux:
   > ```iverilog good_mux.v tb_good_mux.v
-    ./a.out
-    gtkwave tb_good_mux.vcd```
+  ./a.out
+  gtkwave tb_good_mux.vcd```
   
   The following images contain the execution of all the above commands and the waveforms in the gtkwave viewer.
   
