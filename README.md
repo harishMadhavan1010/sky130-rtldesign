@@ -31,7 +31,8 @@ This github repository holds a report/summary of my experiences participating in
     2. Simulator: Tool used for simulating a design so that we can check if RTL Design matches with the given specifications.
     3. Test Bench: Setup to apply stimulus (test_vectors) to the design to check its functionality.
     
-  Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using > git clone https://www.github.com/(insert_file_name).
+  Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
+  > git clone https://www.github.com/(insert_file_name).
     
   ### Simulation of 2:1 Mux using iverilog
   
