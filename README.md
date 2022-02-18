@@ -26,7 +26,7 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 1
   ### Preliminary Tasks
-  I'll list the report by starting off with one-line descriptions of a few tools:
+  I'll start the report by providing readers with one-line descriptions of a few tools:
   
     1. Design: The set of verilog codes which has necessary functionality to meet with the given specs.
     2. Simulator: Tool for simulating a design to check if RTL Design matches with the given specs.
@@ -66,7 +66,9 @@ This github repository holds a report/summary of my experiences participating in
   IMG Capture32
   
   ### Synthesis of 2:1 Mux using Yosys
-  Yosys is a popular opensource synthesis tool. Yosys specifically requires the RTL file and .lib file.
+  Yosys is a popular opensource synthesis tool. Synthesis tools like Yosys specifically require the RTL design file and .lib file. The RTL Design file is remodelled using logic gates (standard cells) provided in the .lib file. The remodelled gate-level version of the design file is called a "netlist". Before delving deep into the implementation in Yosys, let's take our time to check out the gates in a .lib file.
+  
+  A .lib file consists of various logic gates like AND2, OR2, NOR2, NAND2, XOR2, etc. There are various versions of the same gate as well, some of which are faster and others slower! This begs the question: <ins>what's the point in having different variations?</ins> There are very specific and harsh timing requirements gate-level circuits should meet (for example, setup time and hold time is the amount of time required for the input to a Flip-Flop to be stable before and after a clock edge respectively). If not, metastability might happen. In order to avoid this scenario, both slow and fast gates are required. But then, there are other consequences as well because the speed of a circuit depends on capacitance at the load; the wider the transistors in a gate, the less delay it will have but that'd mean more area and power (the inverse is also true). This is why proper constraint files should be supplied so that the synthesizer does its task properly and efficiently.
 
 ## Day 2
   ### Understanding .lib file
