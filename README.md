@@ -27,7 +27,7 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 2
 
-## Day 3
+## <ins> Day 3 </ins>
 
 ## Day 4
 
