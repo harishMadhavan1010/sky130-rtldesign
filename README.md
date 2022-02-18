@@ -28,8 +28,8 @@ This github repository holds a report/summary of my experiences participating in
   ### Preliminary Tasks
   This day starts out with learning some descriptions like:
   
-    1. Design: The set of verilog codes which has necessary functionality to meet with the given specifications.
-    2. Simulator: Tool used for simulating a design so that we can check if RTL Design matches with the given specifications.
+    1. Design: The set of verilog codes which has necessary functionality to meet with the given specs.
+    2. Simulator: Tool for simulating a design to check if RTL Design matches with the given specs.
     3. Test Bench: Setup to apply stimulus (test_vectors) to the design to check its functionality.
     
   Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
