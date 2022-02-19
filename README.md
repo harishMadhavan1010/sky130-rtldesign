@@ -76,8 +76,8 @@ This github repository holds a report/summary of my experiences participating in
   ```
   This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which will be mentioned below.
   
-  > read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-  > read_verilog good_mux.v
+  > read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /n
+  > read_verilog good_mux.v /n
   > synth -top good_mux
 
   IMG Capture34
