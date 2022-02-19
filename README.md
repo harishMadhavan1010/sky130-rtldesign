@@ -121,7 +121,13 @@ This github repository holds a report/summary of my experiences participating in
   | 025C | (25<sup>o</sup>C) Temperature |
   | 1v80 | (1V) Voltage |
   
-  Then, we can use vim to open the file: `gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib` to investigate this file.
+  Then, we can use vim to open the file: `gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib` to investigate this file. The file describes each gate in detail and lists out leakage power for all input combinations of each gate.
+  
+  IMG Capture39
+  
+  The following is the verilog model of the same gate shown in the above image which can be opened using vim separately or typing `:sp ../my_lib/verilog_model/sky130_fd_sc_hd.v` in the same file. Then, we can locate the gate we were examining by using `/sky130_fd_sc_hd__a2111o_1`.
+  
+  IMG Capture40
   
   ### Hierarchical and Flat synthesis
   
