@@ -71,39 +71,44 @@ This github repository holds a report/summary of my experiences participating in
   A .lib file consists of various logic gates like AND2, OR2, NOR2, NAND2, XOR2, etc. There are various versions of the same gate as well, some of which are faster and others slower! This begs the question: <ins>what's the point in having different variations?</ins> There are very specific and harsh timing requirements gate-level circuits should meet (for example, setup time and hold time is the amount of time required for the input to a Flip-Flop to be stable before and after a clock edge respectively). If not, metastability might happen. In order to avoid this scenario, both slow and fast gates are required. But then, there are other consequences as well because the speed of a circuit depends on capacitance at the load; the wider the transistors in a gate, the less delay it will have but that'd mean more area and power (the inverse is also true). This is why proper constraint files should be supplied so that the synthesizer does its task properly and efficiently.
   
   Now, as for the implementation, it is pretty straightforward. First type the following in the terminal:
+  
   ```
   yosys
+  
   ```
   This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which will be mentioned below.
   
-  > read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  ```
+  read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   
-  > read_verilog good_mux.v
+  read_verilog good_mux.v
     
-  > synth -top good_mux
+  synth -top good_mux
+  ```
 
   IMG Capture34
+  
+  ```
+  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-  > abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-
-  > show
-
+  show
+  ```
+  
   IMG Capture35
   
   IMG Capture36
   
   Note that good_mux is synthesized as a cell named `sky130_fd_sc_hd__mux2_1` which basically is a 2:1 Multiplexer.
+  
+  ```
+  write_verilog good_mux_netlist.v
 
-  > write_verilog good_mux_netlist.v
-
-  > !gvim good_mux_netlist.v
-
+  !gvim good_mux_netlist.v
+  ```
+  
   IMG Capture37
   
   IMG Capture38
-  
-  
-
 
 ## Day 2
   ### Understanding .lib file
@@ -187,10 +192,18 @@ This github repository holds a report/summary of my experiences participating in
   
   The following image depicts the various resets in Flip Flops.
   
-  Capture57
+  IMG Capture57
   
   Now that we have learnt various set/reset configurations of Flip Flops, it's time to simulate and synthesize them!
   As mentioned already, the command `iverilog dff_asyncres.v tb_dff_asyncres.v` in terminal creates an executable "a.out", which when executed (`./a.out`), dumps a .vcd file which can be opened via gtkwave using the command `gtkwave tb_dff_asyncres.vcd`.
+  
+  IMG Capture58
+  
+  IMG Capture59
+  
+  IMG Capture60
+  
+  > It's worth noting how 
 
 ## Day 3
 
