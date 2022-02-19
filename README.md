@@ -121,7 +121,7 @@ This github repository holds a report/summary of my experiences participating in
   | 025C | (25<sup>o</sup>C) Temperature |
   | 1v80 | (1V) Voltage |
   
-  Then, we can use vim to open the file: `gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib` to investigate this file. The file describes each gate in detail and lists out leakage power for all input combinations of each gate.
+  Then, we can use vim to open the file: `gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib` to investigate this file. The file describes each gate in detail and lists out parameters like leakage power for all input combinations of each gate, cell spacing, etc.
   
   IMG Capture39
   
