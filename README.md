@@ -34,7 +34,7 @@ This github repository holds a report/summary of my experiences participating in
     4. Synthesizer: Tool which converts RTL to gate-level netlist.
     
   Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
-  > ```git clone https://www.github.com/(insert_file_name)```
+  ```git clone https://www.github.com/(insert_file_name)```
   
   The repository "vsdflow" contains relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files, model files and .lib file for understanding the design flow.
   
@@ -75,6 +75,7 @@ This github repository holds a report/summary of my experiences participating in
   yosys
   ```
   This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which will be mentioned below.
+  
   > read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   > read_verilog good_mux.v
   > synth -top good_mux
