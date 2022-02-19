@@ -214,14 +214,15 @@ This github repository holds a report/summary of my experiences participating in
   
   > In the above image, at the time the marker is pointing, it is clear that even though syncres signal goes LOW and D is HIGH, Q is HIGH only after the next positive edge of the clock. Also, note how the waveform for Q is red initially. It's because synchronous reset/set don't reset or set the output of Flip Flop to 0/1. This makes Q crowbarred for sometime.
   
-  Now, these three design files are synthesized using Yosys, resulting in the following:
+  Now, these three design files are synthesized using Yosys. After using `synth -top <module>`, `dfflibmap -liberty <lib_file>` must also be used to synthesize D flip flops wherever required. The following images are the results:
+  
   IMG Capture63
   
   IMG Capture64
   
   IMG Capture65
   
-  > Note that after using `synth`, `dfflibmap -liberty <lib_file>` is also used to synthesize D flip flops wherever required.
+  > Trivia: Note from above netlist how synchronous reset/set don't even use reset or set pin in D-FF because they are dependent on positive edge of the clock and can easily be simulated as a multiplexer or in this case, an isolation buffer.
   
 ## Day 3
 
