@@ -107,7 +107,19 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 2
   ### Understanding .lib file
+  We have learnt what .lib has in the previous section. In this section, we'll cover .lib file in detail.
+  
   **sky130_fd_sc_hd__tt_025C_1v80.lib - what does this mean?**
+  | Symbol | Meaning |
+  |--------|---------|
+  | sky | skywater |
+  | 130 | 180-130nm process node |
+  | fd | foundry |
+  | sc | standard cell |
+  | hd | high density |
+  | tt | Typical Process |
+  | 025C | Temperature |
+  | 1v80 | Voltage |
   
   ### Hierarchical and Flat synthesis
   
