@@ -259,9 +259,39 @@ This github repository holds a report/summary of my experiences participating in
   
   `Advanced Techniques:`
   
-  <ins>State Optimization</ins> optimizes any unused states. <ins>Retiming</ins> distributes excess positive slack in one Flip Flop equally to other combinational logic, in order to improve frequency of execution, but keeping the total propagation delay the same. Let's take an arbitrary flip flop having a fanout of two other flip flops. Let's say after floorplanning, the master is separated far away from the slaves. In this case, let's say if the master FF had excess positive slack, <ins>Sequential Logic Cloning</ins> makes use of excess positive slack to physically clone the master into two different flip flops and hence making them fanout-of-one.
+  <ins>State Optimization</ins> optimizes any unused states. <ins>Retiming</ins> distributes excess positive slack in one Flip Flop equally to other combinational logic, in order to improve frequency of execution, but keeping the total propagation delay the same. Let's take an arbitrary flip flop having a fanout of two other flip flops. Let's say after floorplanning, the master is separated far away from the slaves. In this case, let's say if the master FF had excess positive slack, <ins>Sequential Logic Cloning</ins> makes use of excess positive slack to physically clone the master into two different flip flops and hence making them fanout-of-one. These techniques will be illustrated in the following image.
+  
+  IMG Capture69
   
   ### Combinational Logic Optimizations
+  
+  This section is primarily going to revolve around the following files: `opt_check.v`, `opt_check2.v`, `opt_check3.v`, `opt_check4.v`, `multiple_module_opt.v` and `multiple_module_opt2.v`. One can use `gvim` to open and view them.
+  
+  IMG Capture70
+  
+  IMG Capture71
+  
+  Synthesis is performed using Yosys but this time, we also include `opt_clean -purge` right after `synth -top <file_name>`. The process is shown below.
+  
+  IMG Capture72
+  
+  IMG Capture73
+  
+  IMG Capture74
+  
+  Since we repeat the exact same steps for the other files, results are shown directly.
+  
+  IMG Capture75
+  
+  IMG Capture76
+  
+  IMG Capture77
+  
+  IMG Capture78
+  
+  IMG Capture79
+  
+  > Note that I have also used `flatten` to get the results shown in final two images. It's not possible to simplify submodules further after all.
   
   ### Sequential Logic Optimizations
 
