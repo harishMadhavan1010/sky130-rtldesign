@@ -12,8 +12,10 @@ This github repository holds a report/summary of my experiences participating in
   - Hierarchical and Flat synthesis
   - Optimization using Flip Flops
 
-* Day 3
-  - TBD
+* Day 3: Combinational and Sequential Optimizations
+  - Overview
+  - Combinational Logic Optimizations
+  - Sequential Logic Optimizations
 
 * Day 4
   - TBD
@@ -229,6 +231,15 @@ This github repository holds a report/summary of my experiences participating in
   ```
   
 ## Day 3
+  ### Overview
+  
+  This section covers the theory for some fundamental optimization techniques. We optimize for a lot of reasons, saving area and power being two important considerations. Combinational Logic can be optimized by constant propagation techniques like direct optimization. There are a number of Boolean Logic optimizations as well, like K-Map, Quine-McKluskey.
+  
+  ### Combinational Logic Optimizations
+  
+  
+  
+  ### Sequential Logic Optimizations
 
 ## Day 4
 
