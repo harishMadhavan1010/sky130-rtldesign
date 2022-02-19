@@ -141,19 +141,56 @@ This github repository holds a report/summary of my experiences participating in
   
   IMG Capture43
   
-  IMG Capture44
+  IMG Capture47
   
-  The images below correspond to the written verilog code (which can be viewed using vim)
+  The images below correspond to the gate-level netlist of the hierarchy (which can be checked using dot viewer and vim).
+  
+  IMG Capture44
   
   IMG Capture45
   
   IMG Capture46
   
-  Trivia: From the above image, it's worth noting how OR logic need not get sythesized to OR gate.
+  > Trivia: From the above image, it's worth noting how OR logic need not get sythesized to OR gate.
   
-  On the other hand, we can use `flatten` in the promt to eliminate the hierarchies leading to flat synthesis. `show` can be used to view the gate level netlist. `write_verilog -noattr multiple_modules_flat.v` is used to generate verilog files corresponding to the netlist.
+  On the other hand, we can use `flatten` in the prompt to eliminate the hierarchies leading to flat synthesis. `show` can be used to view the gate level netlist. `write_verilog -noattr multiple_modules_flat.v` is used to generate verilog files corresponding to the netlist.
+  
+  IMG Capture48
+  
+  The images below correspond to the gate-level netlist of the flattened module (which can be checked using dot viewer and vim).
+  
+  IMG Capture49
+  
+  IMG Capture50
+  
+  We can also synthesize just the submodule instead of the topmodule by specifying in the synth command as `synth -top sub_module1` while executing the rest of the commands. The images below illustrate this.
+  
+  IMG Capture51
+  
+  IMG Capture53
+  
+  IMG Capture52
+  
+  The above approach is especially useful when there are multiple instances of same module. It's convenient to synthesize a module once and replicate it wherever the module is needed instead of directly synthesizing every instance of that module. In a massive design, a synthesizer might fail to synthesize desirably and so synthesizing lower level modules first and then proceeding with the top-level module will let the synthesizer produce the desired netlist.
   
   ### Optimization using Flip Flops
+  
+  Flip Flops are 1-bit memory elements. They are specifically used in this case to avoid undesirable momentary transitions called "Glitches". While glitches may be negligible in smaller combinational circuits, if there are a lot of stages in a design, glitches will occupy undesirably high amount of time between input transitions. However, we can use D-Flip Flops to capture at the right time via the clock edge and completely circumvent the problem. All of these concepts are illustrated in the following images:
+  
+  IMG Capture54
+  
+  IMG Capture55
+  
+  IMG Capture56
+  
+  Now that we have learnt why Flip Flops are used, it's time to learn about the various types of sets and resets available. Asynchronous resets reset the Flip Flop to 0 during the positive/negative edge of the reset pin. They work independent of the clock cycle, whereas synchronous resets are dependent on the clock cycle. Only if there is a positive edge of the clock, synchronous reset works. Sets work the same way but they instead set the Flip Flop to 1. Having both sets and resets make the design vulnerable to race conditions and having asynchronous resets/sets is generally costlier (in terms of power) than their synchronous counterparts.
+  
+  The following image depicts the various resets in Flip Flops.
+  
+  Capture57
+  
+  Now that we have learnt various set/reset configurations of Flip Flops, it's time to simulate and synthesize them!
+  As mentioned already, the command `iverilog dff_asyncres.v tb_dff_asyncres.v` in terminal creates an executable "a.out", which when executed (`./a.out`), dumps a .vcd file which can be opened via gtkwave using the command `gtkwave tb_dff_asyncres.vcd`.
 
 ## Day 3
 
