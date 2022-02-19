@@ -203,7 +203,7 @@ This github repository holds a report/summary of my experiences participating in
   
   IMG Capture60
   
-  > It's worth noting how 
+  > It's worth noting how output transitions to zero right when asyncres signal is high regardless of the clock edge. Similar is the case with asyncset signals. This is not the case with synchronous set/reset signals however. We'll take a look at them eventually.
 
 ## Day 3
 
