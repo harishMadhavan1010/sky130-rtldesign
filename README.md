@@ -118,8 +118,10 @@ This github repository holds a report/summary of my experiences participating in
   | sc | standard cell |
   | hd | high density |
   | tt | Typical Process |
-  | 025C | Temperature |
-  | 1v80 | Voltage |
+  | 025C | (25<sup>o</sup>C) Temperature |
+  | 1v80 | (1V) Voltage |
+  
+  Then, we can use vim to open the file: `gvim ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib` to investigate this file.
   
   ### Hierarchical and Flat synthesis
   
