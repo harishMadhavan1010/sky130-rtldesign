@@ -233,11 +233,35 @@ This github repository holds a report/summary of my experiences participating in
 ## Day 3
   ### Overview
   
-  This section covers the theory for some fundamental optimization techniques. We optimize for a lot of reasons, saving area and power being two important considerations. Combinational Logic can be optimized by constant propagation techniques like direct optimization. There are a number of Boolean Logic optimizations as well, like K-Map, Quine-McKluskey.
+  This section covers the theory for some fundamental optimization techniques. We optimize for a lot of reasons, saving area and power being two important considerations. Combinational Logic can be optimized by Boolean Logic optimizations like K-Map, Quine-McKluskey. When a constant is propagated in the input, we can perform direct optimization. Sequential Logic is optimized by Sequential Constant Propagation or through advanced algorithms like State Optimization, Retiming and Sequential Logic Cloning (Floorplan Aware Synthesis).
   
-  ### Combinational Logic Optimizations
+  <ins>**Combinational Logic Optimization:**</ins>
+  
+  `Constant Propagation:`
+  
+  Let's take an abstract example first; let f(x,y) be a boolean function and let's pretend that x is HIGH always. Then f(x,y) = f(1,y) = g(y). Note that since this is a boolean function with respect to a single variable, g can either invert or pass the values of y. It's amazing how a complex two-input function can be simplified and hence optimized to a buffer or an inverter. The benefits of this technique is illustrated using an example.
+  
+  IMG Capture66
+  
+  `Boolean Logic Minimization:`
+  
+  An example is taken to demonstrate this as well.
+  
+  IMG Capture67
+  
+  <ins>**Sequential Logic Optimization:**</ins>
+  
+  `Sequential Constant Propagation:`
+  
+  This is almost the same as constant propagation in Combination Logic Optimization techniques but this has some more caveats. An example is chosen to illustrate this technique.
+  
+  IMG Capture68
+  
+  `Advanced Techniques:`
   
   
+  
+  ### Combination Logic Optimizations
   
   ### Sequential Logic Optimizations
 
