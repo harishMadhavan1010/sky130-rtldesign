@@ -188,7 +188,7 @@ This github repository holds a report/summary of my experiences participating in
   
   IMG Capture56
   
-  Now that we have learnt why Flip Flops are used, it's time to learn about the various types of sets and resets available. Asynchronous resets reset the Flip Flop to 0 right after the positive edge of the reset pin. They work independent of the clock cycle, whereas synchronous resets are dependent on the clock cycle. Only if there is a positive edge of the clock, synchronous reset works. Sets work the same way but they instead set the Flip Flop to 1. Having both sets and resets make the design vulnerable to race conditions and having asynchronous resets/sets is generally costlier (in terms of power) than having their synchronous counterparts.
+  Now that we have learnt why Flip Flops are used, it's time to learn about the various types of sets and resets available. Asynchronous resets reset the output (Q) of the Flip Flop to 0 regardless of input (D) right at the positive edge of the reset pin. They work independent of the clock cycle, whereas synchronous resets are dependent on the clock cycle. Only if there is a positive edge of the clock, synchronous reset works. Sets work the same way but they instead set the output of the Flip Flop (Q) to 1 regardless of input (D). Having both sets and resets make the design vulnerable to race conditions and having asynchronous resets/sets is generally costlier (in terms of power) than having their synchronous counterparts.
   
   The following image depicts the various resets in Flip Flops. 
   > Trivia: To split a tab into multiple sections, `:sp` is used in the editor.
@@ -205,7 +205,24 @@ This github repository holds a report/summary of my experiences participating in
   IMG Capture60
   
   > It's worth noting how output transitions to zero right when asyncres signal is high regardless of the clock edge. Similar is the case with asyncset signals. This is not the case with synchronous set/reset signals however. We'll take a look at them eventually.
-
+  
+  The following are the waveforms for a few other design files:
+  
+  IMG Capture61
+  
+  IMG Capture62
+  
+  > In the above image, at the time the marker is pointing, it is clear that even though syncres signal goes LOW and D is HIGH, Q is HIGH only after the next positive edge of the clock. Also, note how the waveform for Q is red initially. It's because synchronous reset/set don't reset or set the output of Flip Flop to 0/1. This makes Q crowbarred for sometime.
+  
+  Now, these three design files are synthesized using Yosys, resulting in the following:
+  IMG Capture63
+  
+  IMG Capture64
+  
+  IMG Capture65
+  
+  > Note that after using `synth`, `dfflibmap -liberty <lib_file>` is also used to synthesize D flip flops wherever required.
+  
 ## Day 3
 
 ## Day 4
