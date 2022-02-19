@@ -78,9 +78,9 @@ This github repository holds a report/summary of my experiences participating in
   
   > read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
   
-    read_verilog good_mux.v
+  > read_verilog good_mux.v
     
-    synth -top good_mux
+  > synth -top good_mux
 
   IMG Capture34
 
@@ -89,14 +89,25 @@ This github repository holds a report/summary of my experiences participating in
   > show
 
   IMG Capture35
+  
   IMG Capture36
+  
   Note that good_mux is synthesized as a cell named `sky130_fd_sc_hd__mux2_1` which basically is a 2:1 Multiplexer.
 
-  > write_verilog 
+  > write_verilog good_mux_netlist.v
+
+  > !gvim good_mux_netlist.v
+
+  IMG Capture37
+  
+  IMG Capture38
+  
+  
 
 
 ## Day 2
   ### Understanding .lib file
+  **sky130_fd_sc_hd__tt_025C_1v80.lib - what does this mean?**
   
   ### Hierarchical and Flat synthesis
   
