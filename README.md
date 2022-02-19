@@ -131,6 +131,10 @@ This github repository holds a report/summary of my experiences participating in
   
   ### Hierarchical and Flat synthesis
   
+  This section is dedicated to explain hierarchical and flat synthesis. Needless to say, Yosys will be used in this section. The file we will be trying to synthesize is `multiple_modules.v`. The file can be opened using vim.
+  
+  IMG Capture41
+  
   ### Optimization using Flip Flops
 
 ## Day 3
