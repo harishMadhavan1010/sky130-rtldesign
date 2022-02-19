@@ -207,6 +207,7 @@ This github repository holds a report/summary of my experiences participating in
   > It's worth noting how output transitions to zero right when asyncres signal is high regardless of the clock edge. Similar is the case with asyncset signals. This is not the case with synchronous set/reset signals however. We'll take a look at them eventually.
 
 ## Day 3
+![image](https://user-images.githubusercontent.com/54830019/154799299-ef8d82d2-ea4e-493f-837e-d3f333b49278.png)
 
 ## Day 4
 
