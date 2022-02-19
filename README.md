@@ -224,6 +224,10 @@ This github repository holds a report/summary of my experiences participating in
   
   > Trivia: Note from above netlist how synchronous reset/set don't even use reset or set pin in D-FF because they are dependent on positive edge of the clock and can easily be simulated as a multiplexer or in this case, an isolation buffer.
   
+  ```
+  The day ends off with some interesting optimizations made by the synthesizer: Assuming that the inputs are ordered and sorted, multiplication by 2^n is just shifting the number to the right by n inputs and the first n inputs are now zero. This leads to the synthesizer not bothering to include any complex cells like multiplier and instead, just directly wire the output with corresponding inputs or zero. This effectively prevents power from being wasted unnecessarily.
+  ```
+  
 ## Day 3
 
 ## Day 4
