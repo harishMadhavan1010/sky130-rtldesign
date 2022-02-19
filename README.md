@@ -131,9 +131,27 @@ This github repository holds a report/summary of my experiences participating in
   
   ### Hierarchical and Flat synthesis
   
-  This section is dedicated to explain hierarchical and flat synthesis. Needless to say, Yosys will be used in this section. The file we will be trying to synthesize is `multiple_modules.v`. The file can be opened using vim.
+  This section is dedicated to explain hierarchical and flat synthesis. Needless to say, Yosys will be used in this section. The file we will be trying to synthesize is `multiple_modules.v`. This file consists of a top module and two submodules (logically equivalent to OR and AND) as shown below. 
   
   IMG Capture41
+  
+  Now, the standard sequence of commands are executed in the Yosys prompt i.e. `read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`, `read_verilog multiple_modules.v`, `synth -top multiple_modules`, `abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`, `show multiple_modules` and `write_verilog -noattr multiple_modules_hier.v`. A noticeable difference can be observed in the dot viewer and in `multiple_modules_hier.v`. The submodules are preserved and they don't get flattened to gates by default, leading to hierarchical nature of the modules.
+  
+  IMG Capture42
+  
+  IMG Capture43
+  
+  IMG Capture44
+  
+  The images below correspond to the written verilog code (which can be viewed using vim)
+  
+  IMG Capture45
+  
+  IMG Capture46
+  
+  Trivia: From the above image, it's worth noting how OR logic need not get sythesized to OR gate.
+  
+  On the other hand, we can use `flatten` in the promt to eliminate the hierarchies leading to flat synthesis. `show` can be used to view the gate level netlist. `write_verilog -noattr multiple_modules_flat.v` is used to generate verilog files corresponding to the netlist.
   
   ### Optimization using Flip Flops
 
