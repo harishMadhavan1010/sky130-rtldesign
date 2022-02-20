@@ -300,6 +300,38 @@ This github repository holds a report/summary of my experiences participating in
   IMG Capture81
   
   IMG Capture82
+  
+  Using iverilog and gtkwave, let's simulate every one of them. The results are shown below.
+  
+  IMG Capture83
+  
+  IMG Capture84
+  
+  IMG Capture85
+  
+  IMG Capture86
+  
+  IMG Capture87
+  
+  After synthesizing using Yosys, the following results are obtained. Note that `dfflibmap -liberty <liberty_file>` should be used after synth as well.
+  
+  IMG Capture88
+  
+  IMG Capture89
+  
+  IMG Capture90
+  
+  IMG Capture91
+
+  IMG Capture92
+  
+  The final part of this section discusses about "Unused Outputs Optimization". The following files are used to demonstrate this.
+  
+  IMG Capture93
+  
+  The synthesis tool only cares about the output mentioned in the design file and there is no need for other unmentioned outputs. So, the synthesizer uses one DFF for the output instead of using three of them just to give the output.
+  
+  IMG Capture94
 
 ## Day 4
 
