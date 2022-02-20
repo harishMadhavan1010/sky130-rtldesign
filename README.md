@@ -294,6 +294,8 @@ This github repository holds a report/summary of my experiences participating in
   > Note that I have also used `flatten` to get the results shown in final two images. It's not possible to simplify submodules further after all.
   
   ### Sequential Logic Optimizations
+  
+  The files we will be using for this section is `dff_const1.v`
 
 ## Day 4
 
