@@ -267,7 +267,7 @@ This github repository holds a report/summary of my experiences participating in
   
   This section is primarily going to revolve around the following files: `opt_check.v`, `opt_check2.v`, `opt_check3.v`, `opt_check4.v`, `multiple_module_opt.v` and `multiple_module_opt2.v`. One can use `gvim` to open and view them.
   
-  IMG Capture70
+  IMG Capture80
   
   IMG Capture71
   
@@ -295,7 +295,11 @@ This github repository holds a report/summary of my experiences participating in
   
   ### Sequential Logic Optimizations
   
-  The files we will be using for this section is `dff_const1.v`
+  The files we will be using for this section is `dff_const*.v; * = {1,2,3,4,5}`. The images are shown below.
+  
+  IMG Capture81
+  
+  IMG Capture82
 
 ## Day 4
 
