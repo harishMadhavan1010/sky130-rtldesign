@@ -290,9 +290,7 @@ This github repository holds a report/summary of my experiences participating in
   
   Since we repeat the exact same steps for the other files, results are shown directly.
   <details><summary>
-  ```ruby
   Please click here to look at the results
-  ```
   </summary>
 <p>
   
