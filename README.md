@@ -478,10 +478,31 @@ This github repository holds a report/summary of my experiences participating in
   
   ### For statements
   
-  > 
+  > For statements evaluate expressions present within the loop, as many times as specified, in a compressed manner. For example, consider multiplexer, demultiplexers, encoders, decoders, etc. (especially ones with a lot of inputs or outputs; say 64:1 Mux or 1:32 Demux). Without a loop, the code will seem unnecessarily big and so, to shrink the code, we can use a blocking assignment alongside `for statements`.
   
+  The files we are going to consider are:
+  
+  ![This is an image](../main/images/Capture128.PNG)
+  
+  Simulation for `mux_generate.v`:
+  
+  ![This is an image](../main/images/Capture129.PNG)
+  
+  Simulation for `demux_generate.v`:
+  
+  ![This is an image](../main/images/Capture132.PNG)
   
   ### Generate statements
+  
+  > Generate statements are paired with For statements or if statements to instantiate hardware modules. They are not used in `always` or `initial` blocks. They are used in adders or multipliers. Consider a 8-bit RCA. There are 8 full adders (7 FAs and 1 HA alternatively) in an 8-bit RCA. Instead of instantiating them one by one, we can do them altogether.
+
+  The following is `rca.v`:
+  
+  ![This is an image](../main/images/Capture135.PNG)
+  
+  While simulating, note that we also have to include `a.v`
+  
+  ![This is an image](../main/images/Capture127.PNG)
 
 ## Credits
 [a] Kunalg
