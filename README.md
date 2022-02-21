@@ -2,34 +2,34 @@
 This github repository holds a report/summary of my experiences participating in the workshop "RTL design using Verilog with SKY130 Technology" under Kunal Ghosh.
 
 ## Table of Contents
-* Day 1: Introduction to iverilog and Yosys
-  - Preliminary Tasks
-  - Simulation of 2:1 Mux using iverilog
-  - Synthesis of 2:1 Mux using Yosys
+* [Day 1: Introduction to iverilog and Yosys](https://github.com/harishMadhavan1010/sky130-rtldesign#day-1)
+  - [Preliminary Tasks](https://github.com/harishMadhavan1010/sky130-rtldesign#preliminary-tasks)
+  - [Simulation of 2:1 Mux using iverilog](https://github.com/harishMadhavan1010/sky130-rtldesign#simulation-of-21-mux-using-iverilog)
+  - [Synthesis of 2:1 Mux using Yosys](https://github.com/harishMadhavan1010/sky130-rtldesign#synthesis-of-21-mux-using-yosys)
 
-* Day 2: .libs, hierarchical vs flat synthesis & flop coding
-  - Understanding .lib file
-  - Hierarchical and Flat synthesis
-  - Optimization using Flip Flops
+* [Day 2: .libs, hierarchical vs flat synthesis & flop coding](https://github.com/harishMadhavan1010/sky130-rtldesign#day-2)
+  - [Understanding .lib file](https://github.com/harishMadhavan1010/sky130-rtldesign#understanding-lib-file)
+  - [Hierarchical and Flat synthesis](https://github.com/harishMadhavan1010/sky130-rtldesign#hierarchical-and-flat-synthesis)
+  - [Optimization using Flip Flops](https://github.com/harishMadhavan1010/sky130-rtldesign#optimization-using-flip-flops)
 
-* Day 3: Combinational and Sequential Optimizations
-  - Overview
-  - Combinational Logic Optimizations
-  - Sequential Logic Optimizations
+* [Day 3: Combinational and Sequential Optimizations](https://github.com/harishMadhavan1010/sky130-rtldesign#day-3)
+  - [Overview](https://github.com/harishMadhavan1010/sky130-rtldesign#overview)
+  - [Combinational Logic Optimizations](https://github.com/harishMadhavan1010/sky130-rtldesign#combinational-logic-optimizations)
+  - [Sequential Logic Optimizations](https://github.com/harishMadhavan1010/sky130-rtldesign#sequential-logic-optimizations)
 
-* Day 4: Gate-level Simulations
-  - Gate-level Simulations
-  - Synth-Sim Mismatch
-  - Blocking assignments
+* [Day 4: Gate-level Simulations](https://github.com/harishMadhavan1010/sky130-rtldesign#day-4)
+  - [GLS and Synth-Sim Mismatch](https://github.com/harishMadhavan1010/sky130-rtldesign#gls-and-synth-sim-mismatch)
+  - [Missing Sensitivity List](https://github.com/harishMadhavan1010/sky130-rtldesign#missing-sensitivity-list)
+  - [Blocking assignments](https://github.com/harishMadhavan1010/sky130-rtldesign#blocking-assignments)
 
-* Day 5: If, Case, For, Generate
-  - If statements
-  - Case statements
-  - For statements
-  - Generate statements
+* [Day 5: If, Case, For, Generate](https://github.com/harishMadhavan1010/sky130-rtldesign#day-5)
+  - [If statements](https://github.com/harishMadhavan1010/sky130-rtldesign#if-statements)
+  - [Case statements](https://github.com/harishMadhavan1010/sky130-rtldesign#case-statements)
+  - [For statements](https://github.com/harishMadhavan1010/sky130-rtldesign#for-statements)
+  - [Generate statements](https://github.com/harishMadhavan1010/sky130-rtldesign#generate-statements)
 
-* Credits
-* References
+* [Credits](https://github.com/harishMadhavan1010/sky130-rtldesign#credits)
+* [References](https://github.com/harishMadhavan1010/sky130-rtldesign#references)
 
 ## Day 1
   ### Preliminary Tasks
@@ -40,7 +40,7 @@ This github repository holds a report/summary of my experiences participating in
     3. Test Bench: Setup to apply stimulus (test_vectors) to the design to check its functionality.
     4. Synthesizer: Tool which converts RTL to gate-level netlist.
     
-  Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned<sup>a</sup> using the following command in a relevant directory:
+  Relevant github repositories (sky130RTLDesignAndSynthesisWorkshop, vsdflow) are first cloned using the following command in a relevant directory:
   ```git clone https://www.github.com/(insert_file_name)```
   
   The repository "vsdflow" contains relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files, model files and .lib file for understanding the design flow.
@@ -505,6 +505,10 @@ This github repository holds a report/summary of my experiences participating in
   ![This is an image](../main/images/Capture136.PNG)
 
 ## Credits
-[a] Kunalg
+  1. [Kunalg github profile](https://github.com/kunalg123)
 
 ## References
+  1. [Yosys Docs](http://yosyshq.net/yosys/documentation.html)
+  2. [nandland](https://www.nandland.com/)
+  3. [vsdiat](http://vsdiat.com/)
+  4. [VLSI System Design](https://www.vlsisystemdesign.com/)
