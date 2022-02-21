@@ -149,7 +149,7 @@ This github repository holds a report/summary of my experiences participating in
   
   Now, the standard sequence of commands are executed in the Yosys prompt i.e. `read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`, `read_verilog multiple_modules.v`, `synth -top multiple_modules`, `abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`, `show multiple_modules` and `write_verilog -noattr multiple_modules_hier.v`. A noticeable difference can be observed in the dot viewer and in `multiple_modules_hier.v`. The submodules are preserved and they don't get flattened to gates by default, leading to hierarchical nature of the modules.
   
-  <details><summary><b>Click here to check some standard yosys commands!</b></summary>
+  <details><summary><b><u>Click here to check the standard yosys commands!</u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture42.PNG)
@@ -183,7 +183,7 @@ This github repository holds a report/summary of my experiences participating in
   
   We can also synthesize just the submodule instead of the topmodule by specifying in the synth command as `synth -top sub_module1` while executing the rest of the commands. The images below illustrate this.
   
-  <details><summary><b>Click here to check the illustration!</b></summary>
+  <details><summary><b><u>Click here to check the illustration!</u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture51.PNG)
@@ -282,17 +282,23 @@ This github repository holds a report/summary of my experiences participating in
   
   Synthesis is performed using Yosys but this time, we also include `opt_clean -purge` right after `synth -top <file_name>`. The process is shown below.
   
-  
+  <details><summary><b><u>Click here to check the standard yosys commands!</u></b></summary>
+  <p>
+
   ![This is an image](../main/images/Capture72.PNG)
   
   ![This is an image](../main/images/Capture73.PNG)
   
   ![This is an image](../main/images/Capture74.PNG)
   
+  </p>
+  </details>
+  
+  
   Since we repeat the exact same steps for the other files, results are shown directly.
-  <details><summary>
-  **Please click here to look at the results!**
-  </summary>
+  <details><summary><b><u>
+  Please click here to look at the results!
+  </u></b></summary>
 <p>
   
   ![This is an image](../main/images/Capture75.PNG)
