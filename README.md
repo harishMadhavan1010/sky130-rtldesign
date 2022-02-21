@@ -277,13 +277,13 @@ This github repository holds a report/summary of my experiences participating in
   ![This is an image](../main/images/Capture74.PNG)
   
   Since we repeat the exact same steps for the other files, results are shown directly.
-  <details><summary>```ruby
+  <details><summary>
+  ```ruby
   Please click here to look at the results
-  ```</summary>
+  ```
+  </summary>
 <p>
-
-#### We can hide anything, even code!
-
+  
   ![This is an image](../main/images/Capture75.PNG)
   
   ![This is an image](../main/images/Capture76.PNG)
