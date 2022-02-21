@@ -83,7 +83,7 @@ This github repository holds a report/summary of my experiences participating in
   yosys
   
   ```
-  This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which will be mentioned below.
+  This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which is mentioned below.
   
   <details><summary><b><u>Click here to check the yosys commands with explanations!</u></b></summary>
   <p>
@@ -127,9 +127,9 @@ This github repository holds a report/summary of my experiences participating in
 
 ## Day 2
   ### Understanding .lib file
-  We have learnt what .lib has in the previous section. In this section, we'll cover .lib file in detail.
+  We have learnt an overview of what .lib contains in the previous section. In this section, we'll cover .lib file in detail.
   
-  **sky130_fd_sc_hd__tt_025C_1v80.lib - what does this mean?**
+  **<ins>sky130_fd_sc_hd__tt_025C_1v80.lib - what does this mean?</ins>**
   | Symbol | Meaning |
   |--------|---------|
   | sky | skywater |
