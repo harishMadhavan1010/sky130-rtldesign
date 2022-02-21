@@ -322,25 +322,48 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture88.PNG)
   
-  IMG Capture89
+  ![This is an image](../main/images/Capture89.PNG)
   
-  IMG Capture90
+  ![This is an image](../main/images/Capture90.PNG)
   
-  IMG Capture91
-
-  IMG Capture92
+  ![This is an image](../main/images/Capture91.PNG)
+  
+  ![This is an image](../main/images/Capture92.PNG)
   
   The final part of this section discusses about "Unused Outputs Optimization". The following files are used to demonstrate this.
   
-  IMG Capture93
+  ![This is an image](../main/images/Capture93.PNG)
   
   The synthesis tool only cares about the output mentioned in the design file and there is no need for other unmentioned outputs. So, the synthesizer uses one DFF for the output instead of using three of them just to give the output.
   
-  IMG Capture94
+  ![This is an image](../main/images/Capture94.PNG)
 
 ## Day 4
+  ### Gate-level Simulations
+  
+  
+  
+  ### Synth-Sim Mismatch
+
+  
+  
+  ### Blocking Assignments
+
 
 ## Day 5
+  ### If statements
+  
+  
+  
+  ### Case statements
+  
+  
+  
+  ### For statements
+  
+  
+  
+  ### Generate statements
 
 ## Credits
 [a] Kunalg
