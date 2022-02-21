@@ -129,7 +129,7 @@ This github repository holds a report/summary of my experiences participating in
   ### Understanding .lib file
   We have learnt an overview of what .lib contains in the previous section. In this section, we'll cover .lib file in detail.
   
-  **<ins>sky130_fd_sc_hd__tt_025C_1v80.lib - what does this mean?</ins>**
+  **sky130_fd_sc_hd__tt_025C_1v80.lib - what does this mean?**
   | Symbol | Meaning |
   |--------|---------|
   | sky | skywater |
@@ -157,7 +157,7 @@ This github repository holds a report/summary of my experiences participating in
   
   Now, the standard sequence of commands are executed in the Yosys prompt i.e. `read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`, `read_verilog multiple_modules.v`, `synth -top multiple_modules`, `abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`, `show multiple_modules` and `write_verilog -noattr multiple_modules_hier.v`. A noticeable difference can be observed in the dot viewer and in `multiple_modules_hier.v`. The submodules are preserved and they don't get flattened to gates by default, leading to hierarchical nature of the modules.
   
-  <details><summary><b><u>Click here to check the standard yosys commands!</u></b></summary>
+  <details><summary><b><u><ins>Click here to check the standard yosys commands!</ins></u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture42.PNG)
@@ -191,7 +191,7 @@ This github repository holds a report/summary of my experiences participating in
   
   We can also synthesize just the submodule instead of the topmodule by specifying in the synth command as `synth -top sub_module1` while executing the rest of the commands. The images below illustrate this.
   
-  <details><summary><b><u>Click here to check the illustration!</u></b></summary>
+  <details><summary><b><u><ins>Click here to check the illustration!</ins></u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture51.PNG)
@@ -290,7 +290,7 @@ This github repository holds a report/summary of my experiences participating in
   
   Synthesis is performed using Yosys but this time, we also include `opt_clean -purge` right after `synth -top <file_name>`. The process is shown below.
   
-  <details><summary><b><u>Click here to check the standard yosys commands!</u></b></summary>
+  <details><summary><b><u><ins>Click here to check the standard yosys commands!</ins></u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture72.PNG)
@@ -304,10 +304,11 @@ This github repository holds a report/summary of my experiences participating in
   
   
   Since we repeat the exact same steps for the other files, results are shown directly.
-  <details><summary><b><u>
+  
+  <details><summary><b><u><ins>
   Please click here to look at the results!
-  </u></b></summary>
-<p>
+  </ins></u></b></summary>
+  <p>
   
   ![This is an image](../main/images/Capture75.PNG)
   
@@ -319,8 +320,8 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture79.PNG)
 
-</p>
-</details>
+  </p>
+  </details>
     
   > Note that I have also used `flatten` to get the results shown in final two images. It's not possible to simplify submodules further after all.
   
@@ -334,7 +335,7 @@ This github repository holds a report/summary of my experiences participating in
   
   Using iverilog and gtkwave, let's simulate every one of them. The results are shown below.
   
-  <details><summary><b><u>Click here to check the simulation results!</u></b></summary>
+  <details><summary><b><u><ins>Click here to check the simulation results!</ins></u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture83.PNG)
@@ -352,7 +353,7 @@ This github repository holds a report/summary of my experiences participating in
   
   After synthesizing using Yosys, the following results are obtained. Note that `dfflibmap -liberty <liberty_file>` should be used after synth as well.
   
-  <details><summary><b><u>Click here to check the simulation results!</u></b></summary>
+  <details><summary><b><u><ins>Click here to check the simulation results!</ins></u></b></summary>
   <p>
 
   ![This is an image](../main/images/Capture88.PNG)
@@ -452,9 +453,9 @@ This github repository holds a report/summary of my experiences participating in
   
   > If statements use priority logic which basically makes them equivalent to a set of stages of multiplexer. This can easily lead to "inferred latches" however if the statements don't handle all the cases i.e. exclusion of else statement especially when other cases are not covered.
   
-  The following files are used in this section:
+  The following files are used in this section: (Ignore `incomp_case.v`)
   
-  IMG Capture107
+  ![This is an image](../main/images/Capture107.PNG)
   
   The following is the simulation and synthesis results of the first file.
   
@@ -480,7 +481,7 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture114.PNG)
   
-  <details><summary><b><u>Since this section is fairly big, please click here to see all the results</u></b></summary>
+  <details><summary><b><u><ins>Since this section is fairly big, please click here to see all the results</ins></u></b></summary>
   <p>
 
   **Simulation, Synthesis of incomplete case statement:**
