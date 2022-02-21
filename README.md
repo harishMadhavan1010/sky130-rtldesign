@@ -85,7 +85,7 @@ This github repository holds a report/summary of my experiences participating in
   ```
   This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which is mentioned below.
   
-  <details><summary><b><u>Click here to check the yosys commands with explanations!</u></b></summary>
+  <details><summary><b><u><ins>Click here to check the yosys commands with explanations!</ins></u></b></summary>
   <p>
 
   ```
