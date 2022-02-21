@@ -56,6 +56,8 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../image/Capture30)
   
+  ![image](https://user-images.githubusercontent.com/54830019/154884275-6f2a9fc1-3900-44f3-be9c-53b3ca14e226.png)
+  
   ### Simulation of 2:1 Mux using iverilog
   Iverilog is a simulator. It takes in a behavioural model of a design and corresponding testbench as its arguments. The testbench generates necessary stimulus in the design (which is basically changes in primary inputs over time) and paves way for observing primary output changes. Iverilog then makes sense of this and generates an executable file (.out or .vvp file) which upon execution, dumps a .vcd file (Value Change Dump). This can later be read by gtkwave to visually observe the stimulus as waveforms.
   
