@@ -244,9 +244,10 @@ This github repository holds a report/summary of my experiences participating in
   
   `Constant Propagation:`
   
-  Let's take an abstract example first; let f(x,y) be a boolean function and let's pretend that x is HIGH always. Then f(x,y) = f(1,y) = g(y). Note that since this is a boolean function with respect to a single variable, g can either invert or pass the values of y. It's amazing how a complex two-input function can be simplified and hence optimized to wire/buffer or an inverter. The benefits of this technique is illustrated using an example.
+  Let's take an abstract example first; let f(x,y) be a boolean function and let's pretend that x is HIGH always. Then f(x,y) = f(1,y) = g(y). Note that since this is a boolean function with respect to a single variable, g can either invert or pass the values of y or pass constants. It's amazing how a complex two-input function can be simplified and hence optimized to inverter/buffer or even just a wire. The benefits of this technique is illustrated using an example.
   
   ![This is an image](../main/images/Capture66.PNG)
+  ![image](https://user-images.githubusercontent.com/54830019/154943016-29ff4f67-25dd-4fb3-b986-3aa91a5b06ab.png)
   
   `Boolean Logic Minimization:`
   
@@ -264,9 +265,7 @@ This github repository holds a report/summary of my experiences participating in
   
   `Advanced Techniques:`
   
-  <ins>State Optimization</ins> optimizes any unused states. <ins>Retiming</ins> distributes excess positive slack in one Flip Flop equally to other combinational logic, in order to improve frequency of execution, but keeping the total propagation delay the same. Let's take an arbitrary flip flop having a fanout of two other flip flops. Let's say after floorplanning, the master is separated far away from the slaves. In this case, let's say if the master FF had excess positive slack, <ins>Sequential Logic Cloning</ins> makes use of excess positive slack to physically clone the master into two different flip flops and hence making them fanout-of-one. These techniques will be illustrated in the following image.
-  
-  ![This is an image](../main/images/Capture69.PNG)
+  <ins>State Optimization</ins> optimizes any unused states. <ins>Retiming</ins> distributes excess positive slack in one Flip Flop equally to other combinational logic, in order to improve frequency of execution, but keeping the total propagation delay the same. Let's take an arbitrary flip flop having a fanout of two other flip flops. Let's say after floorplanning, the master is separated far away from the slaves. In this case, let's say if the master FF had excess positive slack, <ins>Sequential Logic Cloning</ins> makes use of excess positive slack to physically clone the master into two different flip flops and hence making them fanout-of-one.
   
   ### Combinational Logic Optimizations
   
