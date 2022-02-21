@@ -395,11 +395,35 @@ This github repository holds a report/summary of my experiences participating in
   
   ### Blocking Assignments
   
-  > Any 
+  > This concept is illustrated using an example.
 
+  In this section, we are going to simulate and synthesize `blocking_caveat.v`. Note that the blocking assignments aren't in the right order in this design. The following images hold the simulation of RTL design and GLS.
+  
+  ![This is an image](../main/images/Capture103.PNG)
+  
+  ![This is an image](../main/images/Capture104.PNG)
+  
+  It's happens to be the case that the synthesizer corrected the problem once again. But this doesn't happen always and has the chance to create some messy bugs.
 
 ## Day 5
   ### If statements
+  
+  > If statements use priority logic which basically makes them equivalent to a set of stages of multiplexer.
+
+  <details><summary>CLICK ME</summary>
+  <p>
+
+  #### We can hide anything, even code!
+
+      ```ruby
+        puts "Hello World"
+      ```
+
+  </p>
+  </details>
+
+  
+  IMG Capture107
   
   
   
