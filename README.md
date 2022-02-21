@@ -531,13 +531,21 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture128.PNG)
   
-  Simulation for `mux_generate.v`:
+  Simulation, Netlist and GLS for `mux_generate.v`:
   
   ![This is an image](../main/images/Capture129.PNG)
   
-  Simulation for `demux_generate.v`:
+  ![This is an image](../main/images/Capture130.PNG)
+  
+  ![This is an image](../main/images/Capture131.PNG)
+  
+  Simulation, Netlist and GLS for `demux_generate.v`:
   
   ![This is an image](../main/images/Capture132.PNG)
+  
+  ![This is an image](../main/images/Capture133.PNG)
+  
+  ![This is an image](../main/images/Capture134.PNG)
   
   ### Generate statements
   
@@ -550,6 +558,14 @@ This github repository holds a report/summary of my experiences participating in
   While simulating, note that we also have to include `fa.v` as an argument in the `iverilog` command. The following is the result of the simulation.
   
   ![This is an image](../main/images/Capture136.PNG)
+  
+  After synthesizing, we get the following netlist. Note that fa.v while reading the verilog file.
+  
+  ![This is an image](../main/images/Capture137.PNG)
+  
+  Gate-level simulation of this is performed (fa.v is not required as an argument now).
+  
+  ![This is an image](../main/images/Capture138.PNG)
 
 ## Credits
   1. [Kunalg github profile](https://github.com/kunalg123)
