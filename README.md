@@ -326,6 +326,9 @@ This github repository holds a report/summary of my experiences participating in
   
   Using iverilog and gtkwave, let's simulate every one of them. The results are shown below.
   
+  <details><summary><b><u>Click here to check the simulation results!</u></b></summary>
+  <p>
+
   ![This is an image](../main/images/Capture83.PNG)
   
   ![This is an image](../main/images/Capture84.PNG)
@@ -336,8 +339,14 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture87.PNG)
   
+  </p>
+  </details>
+  
   After synthesizing using Yosys, the following results are obtained. Note that `dfflibmap -liberty <liberty_file>` should be used after synth as well.
   
+  <details><summary><b><u>Click here to check the simulation results!</u></b></summary>
+  <p>
+
   ![This is an image](../main/images/Capture88.PNG)
   
   ![This is an image](../main/images/Capture89.PNG)
@@ -348,6 +357,9 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture92.PNG)
   
+  </p>
+  </details>
+
   The final part of this section discusses about "Unused Outputs Optimization". The following files are used to demonstrate this.
   
   ![This is an image](../main/images/Capture93.PNG)
@@ -460,7 +472,10 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture114.PNG)
   
-  Simulation, Synthesis of incomplete case statement:
+  <details><summary><b><u>Since this section is fairly big, please click here to see all the results</u></b></summary>
+  <p>
+
+  **Simulation, Synthesis of incomplete case statement:**
 
   ![This is an image](../main/images/Capture115.PNG)
 
@@ -468,7 +483,7 @@ This github repository holds a report/summary of my experiences participating in
 
   ![This is an image](../main/images/Capture117.PNG)
   
-  Simulation, Synthesis of complete case statement:
+  **Simulation, Synthesis of complete case statement:**
 
   ![This is an image](../main/images/Capture118.PNG)
 
@@ -476,7 +491,7 @@ This github repository holds a report/summary of my experiences participating in
 
   ![This is an image](../main/images/Capture120.PNG)
   
-  Simulation, Synthesis of partial case statement:
+  **Simulation, Synthesis of partial case statement:**
 
   ![This is an image](../main/images/Capture121.PNG)
 
@@ -484,7 +499,7 @@ This github repository holds a report/summary of my experiences participating in
 
   ![This is an image](../main/images/Capture123.PNG)
   
-  Simulation, Synthesis, GLS of bad case statement:
+  **Simulation, Synthesis, GLS of bad case statement:**
   
   ![This is an image](../main/images/Capture124.PNG)
 
@@ -493,6 +508,11 @@ This github repository holds a report/summary of my experiences participating in
   ![This is an image](../main/images/Capture126.PNG)
   
   ![This is an image](../main/images/Capture127.PNG)
+  
+  </p>
+  </details>
+  
+  
   
   ### For statements
   
