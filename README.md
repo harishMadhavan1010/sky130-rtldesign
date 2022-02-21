@@ -45,23 +45,16 @@ This github repository holds a report/summary of my experiences participating in
   
   The repository "vsdflow" contains relevant tools for this workshop and "sky130RTLDesignAndSynthesisWorkshop" contains various pre-written verilog files, model files and .lib file for understanding the design flow.
   
-
-
-
-      
-          
-      
-
-  
+  ![Capture28](../images/Capture28.PNG)
 
   The second part of this day involves simulation of 2:1 Mux. The following images contain verilog behavioral file and testbench of the 2:1 Mux which can be read in linux by running the following command:
   ```
   gvim tb_good_mux -o good_mux
   ```
   
-  ![This is an image](../image/Capture29)
+  ![This is an image](../images/Capture29.PNG)
   
-  ![This is an image](../image/Capture30)
+  ![This is an image](../images/Capture30.PNG)
   
   ![image](https://user-images.githubusercontent.com/54830019/154884275-6f2a9fc1-3900-44f3-be9c-53b3ca14e226.png)
   
