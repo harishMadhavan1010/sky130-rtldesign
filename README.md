@@ -446,36 +446,39 @@ This github repository holds a report/summary of my experiences participating in
 
   ![This is an image](../main/images/Capture115.PNG)
 
-  ![This is an image](../main/images/Capture11PNG)
+  ![This is an image](../main/images/Capture116.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture117.PNG)
   
   Simulation, Synthesis of complete case statement:
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture118.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture119.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture120.PNG)
   
   Simulation, Synthesis of partial case statement:
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture121.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture122.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture123.PNG)
   
-  Simulation, Synthesis of bad case statement:
+  Simulation, Synthesis, GLS of bad case statement:
   
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture124.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture125.PNG)
 
-  ![This is an image](../main/images/Capture104.PNG)
+  ![This is an image](../main/images/Capture126.PNG)
+  
+  ![This is an image](../main/images/Capture127.PNG)
   
   ### For statements
   
+  > 
   
   
   ### Generate statements
