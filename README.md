@@ -342,7 +342,7 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture95.PNG)
 
-## Day 4
+## Day 4: Gate-level Simulations
   ### GLS and Synth-Sim Mismatch
   
   > Gate-level Simulations exist to verify the design after synthesis. It involves running the testbench with netlist as Design Under Test. Netlist is logically the same as RTL code and consequently, the testbench used for verifying is the same as that for the simulation for RTL design. We could also ensure that the timing of the design is met by doing timing aware GLS.
@@ -409,7 +409,7 @@ This github repository holds a report/summary of my experiences participating in
   
   It's happens to be the case that the synthesizer corrected the problem once again. But this doesn't happen always and has the chance to create some messy bugs.
 
-## Day 5
+## Day 5: If, Case, For, Generate
   ### If statements
   
   > If statements use priority logic which basically makes them equivalent to a set of stages of multiplexer. This can easily lead to "inferred latches" however if the statements don't handle all the cases i.e. exclusion of else statement especially when other cases are not covered.
