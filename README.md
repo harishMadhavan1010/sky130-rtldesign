@@ -337,15 +337,49 @@ This github repository holds a report/summary of my experiences participating in
   The synthesis tool only cares about the output mentioned in the design file and there is no need for other unmentioned outputs. So, the synthesizer uses one DFF for the output instead of using three of them just to give the output.
   
   ![This is an image](../main/images/Capture94.PNG)
+  
+  If we use `opt_clean -purge`, the count variable itself is purged out.
+  
+  ![This is an image](../main/images/Capture95.PNG)
 
 ## Day 4
-  ### Gate-level Simulations
+  ### GLS and Synth-Sim Mismatch
   
+  > Gate-level Simulations exist to verify the design after synthesis. It involves running the testbench with netlist as Design Under Test. Netlist is logically the same as RTL code and consequently, the testbench used for verifying is the same as that for the simulation for RTL design. We could also ensure that the timing of the design is met by doing timing aware GLS.
   
+  Synth-Sim Mismatch is when the simulation of the RTL design is not the same as the GLS. This can occur due to a variety of reasons like the improper use of Blocking Assignments. The following sections illustrate this.
   
-  ### Synth-Sim Mismatch
+  ### Missing Sensitivity List
 
+  The following images depict the RTL designs we will use in this section.
   
+  ![This is an image](../main/images/Capture96.PNG)
+  
+  Let's first take a look at ternary_operator_mux.v. We first simulate using iverilog and gtkwave:
+  
+  ![This is an image](../main/images/Capture97.PNG)
+  
+  Now, we synthesize this using Yosys:
+  
+  ![This is an image](../main/images/Capture98.PNG)
+  
+  It's clear from the above image that this is what we wanted. Now, let's perform the following to do GLS.
+  
+  ```
+  yosys> write_verilog ternary_operator_mux_net.v
+  
+  yosys> exit
+  
+  XXX: ~/Desktop/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator.v
+  
+  XXX: ~/Desktop/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ ./a.out
+  
+  XXX: ~/Desktop/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ gtkwave tb_ternary_operator.vcd
+  ```
+  
+  The iverilog arguments now also include the primitives and the sky130 file because the netlist encases gates and the details required for that are provided in those files.
+  
+  ![This is an image](../main/images/Capture99.PNG)
   
   ### Blocking Assignments
 
