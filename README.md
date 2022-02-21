@@ -500,9 +500,9 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture135.PNG)
   
-  While simulating, note that we also have to include `a.v`
+  While simulating, note that we also have to include `fa.v` as an argument in the `iverilog` command. The following is the result of the simulation.
   
-  ![This is an image](../main/images/Capture127.PNG)
+  ![This is an image](../main/images/Capture136.PNG)
 
 ## Credits
 [a] Kunalg
