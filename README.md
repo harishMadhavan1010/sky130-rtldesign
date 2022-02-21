@@ -350,6 +350,8 @@ This github repository holds a report/summary of my experiences participating in
   Synth-Sim Mismatch is when the simulation of the RTL design is not the same as the GLS. This can occur due to a variety of reasons like the improper use of Blocking Assignments. The following sections illustrate this.
   
   ### Missing Sensitivity List
+  
+  > When we fail to include all of the variables which directly affect output in the sensitivity list, the output only changes when the variables <ins>in the sensitivity list</ins> change. This is equivalent to a latch with some enable input, depending on the variables in the sensitivity list. The worse part is that the synthesis tool might not even detect a latch.
 
   The following images depict the RTL designs we will use in this section.
   
@@ -377,11 +379,23 @@ This github repository holds a report/summary of my experiences participating in
   XXX: ~/Desktop/VLSI/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ gtkwave tb_ternary_operator.vcd
   ```
   
-  The iverilog arguments now also include the primitives and the sky130 file because the netlist encases gates and the details required for that are provided in those files.
+  The iverilog arguments now also include the primitives and the sky130 file because the netlist encases gates and the details required for that are provided in those files. Once we do GLS, we get the following results and it's clear that everything works as intended.
   
   ![This is an image](../main/images/Capture99.PNG)
   
+  Now, let's take a look at another file (bad_mux.v) which actually WILL result in synth-sim mismatch. `bad_mux.v` doesn't have all the variables in its sensitivity list. The output only responds when the value of sel changes.
+  
+  Using iverilog, gtkwave and yosys, we simulate the RTL design and after synthesis, we simulate the gate-level netlist. The following two images depict simulation of RTL code and simulation of the netlist respectively.
+  
+  ![This is an image](../main/images/Capture101.PNG)
+  
+  ![This is an image](../main/images/Capture102.PNG)
+  
+  From the above image, we can notice that the synthesized design somehow corrected our design and it now matches the `ternary_operator_mux.v` but unfortunately, the synthesizer doesn't always correct the design and the practice of not including all the necessary variables in the sensitivity list is bad in general and can throw the design cycle to chaos. It's better to keep `@(*)` where * is a wildcard and implies all the variables.
+  
   ### Blocking Assignments
+  
+  > Any 
 
 
 ## Day 5
