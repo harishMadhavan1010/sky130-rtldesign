@@ -277,7 +277,13 @@ This github repository holds a report/summary of my experiences participating in
   ![This is an image](../main/images/Capture74.PNG)
   
   Since we repeat the exact same steps for the other files, results are shown directly.
-  
+  <details><summary>```ruby
+  Please click here to look at the results
+  ```</summary>
+<p>
+
+#### We can hide anything, even code!
+
   ![This is an image](../main/images/Capture75.PNG)
   
   ![This is an image](../main/images/Capture76.PNG)
@@ -287,7 +293,10 @@ This github repository holds a report/summary of my experiences participating in
   ![This is an image](../main/images/Capture78.PNG)
   
   ![This is an image](../main/images/Capture79.PNG)
-  
+
+</p>
+</details>
+    
   > Note that I have also used `flatten` to get the results shown in final two images. It's not possible to simplify submodules further after all.
   
   ### Sequential Logic Optimizations
