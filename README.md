@@ -85,20 +85,23 @@ This github repository holds a report/summary of my experiences participating in
   ```
   This opens up the Yosys prompt. After this, we'll have to execute several commands in the said prompt, all of which will be mentioned below.
   
+  <details><summary><b><u>Click here to check the yosys commands with explanations!</u></b></summary>
+  <p>
+
   ```
-  read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+  read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib   (To read .lib file)
   
-  read_verilog good_mux.v
+  read_verilog good_mux.v                                             (To read a verilog design file)
     
-  synth -top good_mux
+  synth -top good_mux                                                 (To synthesize the design as top module; to be explained later)
   ```
 
   ![This is an image](../main/images/Capture34.PNG)
   
   ```
-  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-
-  show
+  abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib        (To map the technology and generate gate-level netlist)
+  
+  show                                                                (To view the generated netlist)
   ```
   
   ![This is an image](../main/images/Capture35.PNG)
@@ -108,14 +111,19 @@ This github repository holds a report/summary of my experiences participating in
   Note that good_mux is synthesized as a cell named `sky130_fd_sc_hd__mux2_1` which basically is a 2:1 Multiplexer.
   
   ```
-  write_verilog good_mux_netlist.v
+  write_verilog good_mux_netlist.v                                     (To write a verilog file)
 
-  !gvim good_mux_netlist.v
+  !gvim good_mux_netlist.v                                             (To view a file inside yosys prompt)
   ```
   
   ![This is an image](../main/images/Capture37.PNG)
   
   ![This is an image](../main/images/Capture38.PNG)
+  
+  </p>
+  </details>
+  
+  
 
 ## Day 2
   ### Understanding .lib file
