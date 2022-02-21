@@ -52,9 +52,9 @@ This github repository holds a report/summary of my experiences participating in
   gvim tb_good_mux -o good_mux
   ```
   
-  ![This is an image](image/Capture29)
+  ![This is an image](../image/Capture29)
   
-  ![This is an image](image/Capture30)
+  ![This is an image](../image/Capture30)
   
   ### Simulation of 2:1 Mux using iverilog
   Iverilog is a simulator. It takes in a behavioural model of a design and corresponding testbench as its arguments. The testbench generates necessary stimulus in the design (which is basically changes in primary inputs over time) and paves way for observing primary output changes. Iverilog then makes sense of this and generates an executable file (.out or .vvp file) which upon execution, dumps a .vcd file (Value Change Dump). This can later be read by gtkwave to visually observe the stimulus as waveforms.
