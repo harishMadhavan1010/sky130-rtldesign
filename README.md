@@ -246,15 +246,13 @@ This github repository holds a report/summary of my experiences participating in
   
   Let's take an abstract example first; let f(x,y) be a boolean function and let's pretend that x is HIGH always. Then f(x,y) = f(1,y) = g(y). Note that since this is a boolean function with respect to a single variable, g can either invert or pass the values of y or pass constants. It's amazing how a complex two-input function can be simplified and hence optimized to inverter/buffer or even just a wire. The benefits of this technique is illustrated using an example.
   
-  ![Capture66](../main/images/Capture66.PNG)
-  ![image](https://user-images.githubusercontent.com/54830019/154943016-29ff4f67-25dd-4fb3-b986-3aa91a5b06ab.png)
+  ![Capture66](../main/images/Capture66.png)
   
   `Boolean Logic Minimization:`
   
   An example is taken to demonstrate this as well.
   
   ![Capture67](../main/images/Capture67.PNG)
-  ![image](https://user-images.githubusercontent.com/54830019/154945609-cf211b84-312f-4103-adbf-108638520fcc.png)
   
   <ins>**Sequential Logic Optimization:**</ins>
   
@@ -263,7 +261,6 @@ This github repository holds a report/summary of my experiences participating in
   This is almost the same as constant propagation in Combination Logic Optimization techniques but this has some more caveats. An example is chosen to illustrate this technique.
   
   ![Capture68](../main/images/Capture68.PNG)
-  ![image](https://user-images.githubusercontent.com/54830019/154945665-7b3230f9-a867-4e28-a35b-1cf730e2162c.png)
   
   `Advanced Techniques:`
   
