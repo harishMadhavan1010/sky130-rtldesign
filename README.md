@@ -397,39 +397,82 @@ This github repository holds a report/summary of my experiences participating in
   
   > This concept is illustrated using an example.
 
-  In this section, we are going to simulate and synthesize `blocking_caveat.v`. Note that the blocking assignments aren't in the right order in this design. The following images hold the simulation of RTL design and GLS.
+  In this section, we are going to simulate and synthesize `blocking_caveat.v`. Note that the blocking assignments aren't in the right order in this design.
   
   ![This is an image](../main/images/Capture103.PNG)
   
+  The following images hold the simulation of RTL design and GLS.
+  
   ![This is an image](../main/images/Capture104.PNG)
+  
+  ![This is an image](../main/images/Capture106.PNG)
   
   It's happens to be the case that the synthesizer corrected the problem once again. But this doesn't happen always and has the chance to create some messy bugs.
 
 ## Day 5
   ### If statements
   
-  > If statements use priority logic which basically makes them equivalent to a set of stages of multiplexer.
-
-  <details><summary>CLICK ME</summary>
-  <p>
-
-  #### We can hide anything, even code!
-
-      ```ruby
-        puts "Hello World"
-      ```
-
-  </p>
-  </details>
-
+  > If statements use priority logic which basically makes them equivalent to a set of stages of multiplexer. This can easily lead to "inferred latches" however if the statements don't handle all the cases i.e. exclusion of else statement especially when other cases are not covered.
+  
+  The following files are used in this section:
   
   IMG Capture107
   
+  The following is the simulation and synthesis results of the first file.
   
+  ![This is an image](../main/images/Capture108.PNG)
+  
+  ![This is an image](../main/images/Capture109.PNG)
+  
+  ![This is an image](../main/images/Capture110.PNG)
+  
+  The following is the simulation and synthesis results of the second file.
+  
+  ![This is an image](../main/images/Capture111.PNG)
+  
+  ![This is an image](../main/images/Capture112.PNG)
+  
+  ![This is an image](../main/images/Capture113.PNG)
   
   ### Case statements
   
+  > Case statement, when not misused, is very similar to if statement. But unlike if statements, when there are parallel cases, every parallel case is executed as opposed to just the first matching case and then coming out of the cases.
   
+  The following files are used in this section, with the first file being the ideal file.
+  
+  ![This is an image](../main/images/Capture114.PNG)
+  
+  Simulation, Synthesis of incomplete case statement:
+
+  ![This is an image](../main/images/Capture115.PNG)
+
+  ![This is an image](../main/images/Capture11PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
+  
+  Simulation, Synthesis of complete case statement:
+
+  ![This is an image](../main/images/Capture104.PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
+  
+  Simulation, Synthesis of partial case statement:
+
+  ![This is an image](../main/images/Capture104.PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
+  
+  Simulation, Synthesis of bad case statement:
+  
+  ![This is an image](../main/images/Capture104.PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
+
+  ![This is an image](../main/images/Capture104.PNG)
   
   ### For statements
   
