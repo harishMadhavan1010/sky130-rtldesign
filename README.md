@@ -260,7 +260,7 @@ This github repository holds a report/summary of my experiences participating in
   
   `Constant Propagation:`
   
-  Let's take an abstract example first; let f(x,y) be a boolean function and let's pretend that x is HIGH always. Then f(x,y) = f(1,y) = g(y). Note that since this is a boolean function with respect to a single variable, g can either invert or pass the values of y or pass constants. It's amazing how a complex two-input function can be simplified and hence optimized to inverter/buffer or even just a wire. The benefits of this technique is illustrated using an example.
+  Let's take an abstract example first; let f(x,y) be a boolean function and let's pretend that x is HIGH always. Then f(x,y) = f(1,y) = g(y). Note that since this is a boolean function with respect to a single variable, g can either invert or pass the values of y or pass constants. It's amazing how a complex two-input function (with multiple transistors) can be simplified and hence optimized to inverter/buffer orst a wire. The benefits of this technique is illustrated using an example.
   
   ![Capture66](../main/images/Capture66.png)
   
