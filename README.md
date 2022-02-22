@@ -563,7 +563,7 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture136.PNG)
   
-  After synthesizing, we get the following netlist. Note that fa.v while reading the verilog file.
+  After synthesizing, we get the following netlist. Note that fa.v should be included as an argument while reading the verilog file.
   
   ![This is an image](../main/images/Capture137.PNG)
   
