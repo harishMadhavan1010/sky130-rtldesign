@@ -541,7 +541,7 @@ This github repository holds a report/summary of my experiences participating in
   
   ![This is an image](../main/images/Capture131.PNG)
   
-  > Note that there is an inferred latch because during the execution of `for statement`, only one output changes as opposed to all of them, making this similar to partial_case_assignment.v in a way.
+  > Note that there is an inferred latch is pointless because the `enable pin` is connected to a constant value.
   
   Simulation, Netlist and GLS for `demux_generate.v`:
   
